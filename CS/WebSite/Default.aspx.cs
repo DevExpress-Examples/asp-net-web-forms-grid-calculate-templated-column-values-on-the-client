@@ -1,9 +1,8 @@
 ﻿using System;
-using DevExpress.Web.ASPxEditors;
-using DevExpress.Web.ASPxGridView;
+using DevExpress.Web;
 
 public partial class _Default : System.Web.UI.Page {
-    protected void grdProducts_CustomUnboundColumnData(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewColumnDataEventArgs e) {
+    protected void grdProducts_CustomUnboundColumnData(object sender, DevExpress.Web.ASPxGridViewColumnDataEventArgs e) {
         if(e.Column.FieldName == "Total") {
             decimal price = (decimal)e.GetListSourceFieldValue("UnitPrice");
             int quantity = Convert.ToInt32(e.GetListSourceFieldValue("UnitsInStock"));

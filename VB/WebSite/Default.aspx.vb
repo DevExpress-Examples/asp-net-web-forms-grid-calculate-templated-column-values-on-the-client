@@ -1,11 +1,10 @@
 ﻿Imports Microsoft.VisualBasic
 Imports System
-Imports DevExpress.Web.ASPxEditors
-Imports DevExpress.Web.ASPxGridView
+Imports DevExpress.Web
 
 Partial Public Class _Default
 	Inherits System.Web.UI.Page
-	Protected Sub grdProducts_CustomUnboundColumnData(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridView.ASPxGridViewColumnDataEventArgs)
+	Protected Sub grdProducts_CustomUnboundColumnData(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridViewColumnDataEventArgs)
 		If e.Column.FieldName = "Total" Then
 			Dim price As Decimal = CDec(e.GetListSourceFieldValue("UnitPrice"))
 			Dim quantity As Integer = Convert.ToInt32(e.GetListSourceFieldValue("UnitsInStock"))
