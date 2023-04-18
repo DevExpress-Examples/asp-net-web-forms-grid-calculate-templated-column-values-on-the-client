@@ -11,7 +11,7 @@
 <!-- default file list end -->
 # ASPxGridView - How to calculate column values on the client side using DataItemTemplate
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3929/)**
+**[[Run Online]](https://codecentral.devexpress.com/128533487/)**
 <!-- run online end -->
 
 
