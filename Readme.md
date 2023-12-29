@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to calculate templated column values on the client
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128533487/)**
-<!-- run online end -->
 
 This example demonstrates how to create an unbound column (**Total**) that changes its value based on templated column values.
 
