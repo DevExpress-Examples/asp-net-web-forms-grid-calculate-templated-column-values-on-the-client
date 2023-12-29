@@ -10,9 +10,6 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxGridView - How to calculate column values on the client side using DataItemTemplate
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128533487/)**
-<!-- run online end -->
 
 
 <p>This example demonstrates how to calculate column values on the client side via editors inside DataItemTemplate and submit the changes to a datasource.<br />
