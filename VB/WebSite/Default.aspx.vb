@@ -1,9 +1,9 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports DevExpress.Web
 
 Partial Public Class _Default
 	Inherits System.Web.UI.Page
+
 	Protected Sub grdProducts_CustomUnboundColumnData(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridViewColumnDataEventArgs)
 		If e.Column.FieldName = "Total" Then
 			Dim price As Decimal = CDec(e.GetListSourceFieldValue("UnitPrice"))
@@ -20,14 +20,14 @@ Partial Public Class _Default
 	End Sub
 
 	Protected Sub seQuantity_Init(ByVal sender As Object, ByVal e As EventArgs)
-		Dim spinEdit As ASPxSpinEdit = CType(sender, ASPxSpinEdit)
+		Dim spinEdit As ASPxSpinEdit = DirectCast(sender, ASPxSpinEdit)
 		Dim container As GridViewDataItemTemplateContainer = TryCast(spinEdit.NamingContainer, GridViewDataItemTemplateContainer)
 		spinEdit.ClientInstanceName = String.Format("seClientQuantity_{0}", container.VisibleIndex)
 		spinEdit.ClientSideEvents.NumberChanged = String.Format("function(s, e) {{ OnCalculateTotal({0},{1}); }}", container.VisibleIndex, container.KeyValue)
 
 	End Sub
 	Protected Sub seUnitPrice_Init(ByVal sender As Object, ByVal e As EventArgs)
-		Dim spinEdit As ASPxSpinEdit = CType(sender, ASPxSpinEdit)
+		Dim spinEdit As ASPxSpinEdit = DirectCast(sender, ASPxSpinEdit)
 		Dim container As GridViewDataItemTemplateContainer = TryCast(spinEdit.NamingContainer, GridViewDataItemTemplateContainer)
 		spinEdit.ClientInstanceName = String.Format("seClientPrice_{0}", container.VisibleIndex)
 		spinEdit.ClientSideEvents.NumberChanged = String.Format("function(s, e) {{ OnCalculateTotal({0},{1}); }}", container.VisibleIndex, container.KeyValue)
