@@ -91,7 +91,7 @@ Follow the steps below to calculate templated column values on the client:
 * [How to calculate bound and unbound column values on the client](https://github.com/DevExpress-Examples/how-to-sum-values-of-bound-and-unbound-columns-and-calculate-a-total-value-on-the-client-side-e2961)
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-calculate-templated-column-values-on-the-client&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-calculate-templated-column-values-on-the-client&~~~was_helpful=no)
 
